@@ -11,11 +11,74 @@
     --testimonials-bg: hsl(219, 30%, 18%);
 }
 
-/* font-family: 'Raleway', sans-serif; POUR TITRES*/
 
 body {
+    /* font-family: 'Raleway', sans-serif; POUR TITRES*/
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #FFF;
     background-color: var(--dark-main-bg);
+}
+
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.navbar .main-menu ul {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    border: 1px solid yellow;
+
+}
+
+.hero-img {
+    height: 450px;
+}
+
+.hero .container-lg {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+/* CLASSES UTILITAIRE */
+
+.container-lg {
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    text-align: center;
 }
