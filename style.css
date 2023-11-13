@@ -36,6 +36,7 @@ ul {
 
 .navbar {
     padding: 20px;
+    background-color: hsl(217, 28%, 15%);
 }
 
 .navbar .container {
@@ -59,8 +60,13 @@ ul {
 /* HERO SECTION */
 
 .hero {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin-bottom: 100px;
+    background-color: hsl(217, 28%, 15%);
+    background-image: url(images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom -140px;
+    background-size: cover;
 }
 
 .hero .container-md {
@@ -70,18 +76,18 @@ ul {
 }
 
 .hero-img {
-    height: 450px;
+    height: 350px;
 }
 
 .hero-header {
-    font-size: 23px;
-    border: 1px solid purple;
+    font-size: 20px;
+    /* border: 1px solid purple; */
     width: 70%;
     margin: auto;
 }
 
 .hero-content {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     width: 60%;
     margin: auto;
     font-size: 16px;
@@ -97,7 +103,7 @@ ul {
 }
 
 .card {
-    border: 1px solid cyan;
+    /* border: 1px solid cyan; */
     width: 80%;
     margin: 20px auto;
     display: flex;
@@ -114,27 +120,240 @@ ul {
     font-size: 18px;
 }
 
+/* SECOND HERO SECTION */
+
+.stayproductive-img {
+    border: 1px solid rgb(95, 151, 12);
+}
+
+.stayproductive-img2 {
+    height: 450px;
+}
+
+.hero-second-content {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.hero-second-header {
+    font-size: 20px;
+    width: 70%;
+}
+
+.hero-second-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-link,
+.hero-link i {
+    color: hsl(176, 68%, 64%);
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonial-cards {
+    /* border: 2px solid yellow; */
+    border-radius: 12px;
+    background-color: var(--testimonials-bg);
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px 25px;
+}
+
+.testimonial-text {
+    /* border: 2px solid green; */
+    line-height: 1.6em;
+}
+
+.testimonial-profil {
+    /* border: 3px solid palevioletred; */
+    font-size: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.testimonial-profil h5 {
+    font-size: 13px;
+}
 
 
+.profil-image {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonials .container-lg {
+    position: relative;
+}
+
+.testimonials .container-lg .bg-image {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 100;
+    /* Adjust the z-index to position it behind other content */
+}
+
+
+/* NEWSLETTER SECTION */
+
+.newsletter-card {
+    display: grid;
+    /* border: 1px solid yellow; */
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 30px 100px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.newsletter-header h1 {
+    font-size: 35px;
+    /* border: 1px solid yellow; */
+}
+
+.newsletter-text {
+    /* border: 1px solid purple; */
+    width: 75%;
+    margin: auto;
+}
+
+.newsletter-mail {
+    /* border: 1px solid palevioletred; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.input-mail input {
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 460px;
+}
+
+input::placeholder {
+    font-family: 'Open sans';
+    color: #b3b3b3;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* .input-mail {
+    flex: 1;
+}
+
+.newsletter {
+    flex: 1;
+} */
+
+
+
+/* FOOTER SECTION */
+
+.footer .container-xl {
+    display: grid;
+}
+
+.footer .footer-img {
+    border: 1px solid palevioletred;
+}
+
+.footer .footer-content {
+    border: 1px solid yellow;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-text {
+    border: 1px solid palevioletred;
+}
+
+.footer-contact {
+    border: 1px solid palevioletred;
+}
+
+.footer-links {
+    border: 1px solid palevioletred;
+}
+
+.footer-text {
+    border: 1px solid palevioletred;
+}
+
+.social-icons {
+    border: 3px solid palevioletred;
+}
+
+.social-icons ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.fa-brands {
+    font-size: 16px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 5px;
+}
 
 
 /* CLASSES UTILITAIRE */
 
 .container-md {
-    width: 60%;
+    width: 65%;
     margin: auto;
     border: 1px solid red;
     text-align: center;
+    margin-bottom: 150px;
+}
+
+.container-lg {
+    width: 75%;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 26px;
+    margin-bottom: 100px;
+}
+
+.container-xl {
+    width: 85%;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 26px;
+    margin-bottom: 100px;
 }
 
 
-.test {
-    margin: 20px auto;
-}
 
 
 .main-btn {
-    padding: 13px 65px;
+    cursor: pointer;
+    padding: 13px 80px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -142,4 +361,30 @@ ul {
     border: none;
     background: linear-gradient(to left, hsl(176, 51%, 51%), hsl(198, 60%, 50%));
     color: #FFF;
+}
+
+.newsletter-btn {
+    cursor: pointer;
+    /* padding: 13px 60px; */
+    height: 50px;
+    width: 240px;
+    margin-left: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(to left, hsl(176, 51%, 51%), hsl(198, 60%, 50%));
+    color: #FFF;
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+    .newsletter-mail {
+        grid-template-columns: 1fr;
+        /* Display one column for smaller screens */
+    }
 }
