@@ -482,7 +482,7 @@ input::placeholder {
 @media (max-width: 430px) {
 
     .navbar {
-        width: 100%;
+        width: 95%;
         padding: 5px 10px;
     }
 
@@ -495,6 +495,10 @@ input::placeholder {
         margin: 10px auto;
     }
 
+    .container .logo {
+        display: flex;
+    }
+
     .logo img {
         /* border: 1px solid red; */
         height: 25px;
@@ -502,6 +506,7 @@ input::placeholder {
 
     .hero .container-md {
         width: 90%;
+        margin-bottom: 20px;
     }
 
     .hero-img {
@@ -533,15 +538,29 @@ input::placeholder {
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-bottom: 90px;
     }
 
     .testimonials .container-lg {
         display: flex;
         flex-direction: column;
+        position: relative;
+    }
+
+    .testimonials .container-lg .bg-image {
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        z-index: 100;
+        /* Adjust the z-index to position it behind other content */
     }
 
     .testimonial-cards {
         margin: 0 auto;
+    }
+
+    .newsletter .container-md {
+        width: 90%;
     }
 
     .newsletter-card {
@@ -601,6 +620,11 @@ input::placeholder {
     .container-xl .footer-content {
         display: flex;
         flex-direction: column;
+    }
+
+    .social-icons {
+        width: 30%;
+        margin: 40px auto;
     }
 
 
